@@ -3,25 +3,16 @@
 	"id": "all-the-totems",
 	"version": "${version}",
 	"name": "All The Totems",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod that enables the use of all items as Totems of Undying",
 	"authors": [
-		"Me!"
+		"1TheCrazy"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/1TheCrazy/AllTheTotems"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/all-the-totems/icon.png",
 	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"me.onethecrazy.AllTheTotems"
-		],
-		"fabric-datagen": [
-			"me.onethecrazy.AllTheTotemsDataGenerator"
-		]
-	},
 	"mixins": [
 		"all-the-totems.mixins.json"
 	],
