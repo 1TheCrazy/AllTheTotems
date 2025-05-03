@@ -7,7 +7,7 @@ Just hold any item in your hand when you're about to die, and it will act like a
 Saving you, but then disappearing!
 
 ## Installing
-Download it from [GitHub Releases](https://github.com/1TheCrazy/AllTheTotems/releases), [Modrinth]() or [CurseForge]()
+Download it from [GitHub Releases](https://github.com/1TheCrazy/AllTheTotems/releases), [Modrinth](https://modrinth.com/mod/all-the-totems) or [CurseForge](https://www.curseforge.com/minecraft/mc-mods/all-the-totems)
 
 Then place it inside your `mods` folder for Minecraft.
 
