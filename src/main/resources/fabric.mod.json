@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "all-the-totems",
 	"version": "${version}",
-	"name": "All The Totems",
-	"description": "A mod that enables the use of all items as Totems of Undying",
+	"name": "AllTheTotems",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"1TheCrazy"
 	],
@@ -13,16 +13,20 @@
 	"license": "MIT",
 	"icon": "assets/all-the-totems/icon.png",
 	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.onethecrazy.AllTheTotems"
+		]
+	},
 	"mixins": [
 		"all-the-totems.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*"
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.8",
+		"java": ">=21"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "graphic-qol"
 	}
 }
