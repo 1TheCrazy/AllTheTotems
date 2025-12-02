@@ -17,13 +17,13 @@ import java.util.function.Function;
 
 @Mixin(Items.class)
 public class TotemMixin {
-	@Inject(method = "register(Lnet/minecraft/registry/RegistryKey;Ljava/util/function/Function;Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/Item;", at = @At("HEAD"), cancellable = true)
-	private static void register_override(RegistryKey<Item> key, Function<Item.Settings, Item> factory, Item.Settings settings, CallbackInfoReturnable<Item> cir) {
-		Item item = factory.apply(settings.component(DataComponentTypes.DEATH_PROTECTION, DeathProtectionComponent.TOTEM_OF_UNDYING).registryKey(key));
-		if (item instanceof BlockItem blockItem) {
-			blockItem.appendBlocks(Item.BLOCK_ITEMS, item);
-		}
+    @Inject(method = "register(Lnet/minecraft/registry/RegistryKey;Ljava/util/function/Function;Lnet/minecraft/item/Item$Settings;)Lnet/minecraft/item/Item;", at = @At("HEAD"), cancellable = true)
+    private static void register_override(RegistryKey<Item> key, Function<Item.Settings, Item> factory, Item.Settings settings, CallbackInfoReturnable<Item> cir) {
+        Item item = factory.apply(settings.component(DataComponentTypes.DEATH_PROTECTION, DeathProtectionComponent.TOTEM_OF_UNDYING).registryKey(key));
+        if (item instanceof BlockItem blockItem) {
+            blockItem.appendBlocks(Item.BLOCK_ITEMS, item);
+        }
 
-		cir.setReturnValue(Registry.register(Registries.ITEM, key, item));
-	}
+        cir.setReturnValue(Registry.register(Registries.ITEM, key, item));
+    }
 }
